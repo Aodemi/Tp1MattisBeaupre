@@ -1,0 +1,35 @@
+Parties Prenantes:
+    -Développeurs
+    -Entreprise de développement ou tout autre groupe/individu nécessitant une gestion de tâches
+
+Objectif:
+    Permettre une gestion avancé et pratique de diverses tâches à partir d'une interface facile d'approche
+    pour tout utilisateur utilisant la page du site.
+
+Fonctionnalités:
+    -Inscription à un compte (Fait apparaitre un modal)
+    -Connexion à un compte (Fait apparaitre un modal)
+    -Création de tâches
+    -Modification de tâches
+    -Marquer le statut d'une tâche terminer ou pas
+    -Suppression de tâches
+    -Enregistrement de tâches dans le stockage local avec pour objectif de les conserver après avoir recharger le site
+    -Barre latérale qui contient les fonctionnalités externes comme: trier, catégoriser et rechercher des tâches
+    -Catégoriser les tâches
+    -Trier les tâches
+    -Rechercher les tâches
+    -Interface utilisateurs accrocheuse
+
+Exigences non-fonctionnelles:
+    -Wifi
+    -Sécurité
+
+Démarche:
+    Il faut en premier s'assurer que l'enregistrement des informations d'inscription se fait bien dans le stockage local
+    et que la connexion vérifie bien les informations requises. Après cela il faut une fonction qui ajoutera les
+    tâches et leurs mini-fonctions tels que (supprimer, modifier et classer terminer). Ces tâches doivent être elles
+    aussi sauvegardées dans le stockage local et ne pas être perdues lors du rafraichissement du navigateur. Pour bien
+    faire cela il faut itérer parmis les clés du stockage local et vérifier celles qui contiennent 'task' pour ne pas
+    afficher des informations erronés tels que celles d'inscription comme étant des tâches. Ces fonctions doivent être
+    facile d'accès pour que chacun sache utiliser le site correctement et donc seront afficher au coté du nom de la tâche
+    à chaque fois qu'il y en aura une. Des animations sont requises pour comprendre ce qui est interactif ou non.

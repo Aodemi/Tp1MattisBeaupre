@@ -1,0 +1,122 @@
+#addTask{
+    background-color: gold;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    transition: left 0.3s;
+    z-index: 1;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.w3-sidebar{height:100%;width:200px;background-color:rgb(241, 227, 227);position:fixed!important;z-index:1;overflow:none}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
+
+#div1{
+    background-color: #a1a73d;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#div2{
+    background-color: #afb634;
+    margin-bottom: 5px;
+}
+#div3{
+    background-color: rgb(195, 202, 65);
+    margin-bottom: 5px;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+   }
+   .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid dodgerblue;
+    box-shadow: 0 0 25px 5px dodgerblue;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 53, 0.932);
+    color: gold;
+    text-align: center;
+   }
+   input{
+    font-size: 14px;
+    background: rgb(253, 253, 253);
+    color: black;
+   }
+   ::placeholder{
+    color: rgb(39, 39, 34);
+    opacity: 0.7;
+   }
+   button{
+    background-color: crimson;
+    color: #000080;
+    font-weight: 700;
+    font-family: sans-serif;
+    opacity: 0.9;
+    cursor: pointer;
+   }
+
+   button:hover {
+    transition: 0.25s;
+    box-shadow: 0 0 5px white;
+    opacity: 1;
+   }
+.centrerhaut{
+    text-align: center;
+}
+.taskDone{
+    text-decoration: line-through 2px black;
+    opacity: 0.7;
+}
+
+li img{
+    float: right;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li img:hover{
+    transform: scale(1.1);
+}
+li {
+    border-bottom: 2px solid dodgerblue;
+    margin: 5px;
+    margin-right: 30px;
+    padding: 10px;
+    list-style: decimal;
+    text-shadow: 0 0 2px white;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+ul {
+    text-align: left;
+}
+
+h1{
+    font-size: 35px;
+    font-family:monospace;
+    text-shadow: 0 0 4px white;
+}
+#editTaskBtn {
+    background-color: dodgerblue;
+    font-weight: 600;
+    visibility: hidden;
+}

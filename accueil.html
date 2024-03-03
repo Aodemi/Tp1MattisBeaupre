@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List</title>
+        <link rel="stylesheet" target=_blank href="./CSS/style.css">
+    </head>
+
+    <body onload="loadLocalStorage()">
+        <!-------------------------------------- Sidebar --------------------------------------->
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onclick="w3_close()">Close &times;</button>
+        <div id="groupe1"> <a href="#" class="w3-bar-item button">Trier</a></div>
+        <div id="groupe2"><a href="#" class="w3-bar-item button">Catégoriser</a></div>
+        <div id="groupe3"><a href="#" class="w3-bar-item button">Rechercher</a></div>
+        </div>
+
+        <!-------------------------------------- Bouton de la barre latérale --------------------------------------->
+        <div class="w3-teal">
+            <button class="button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+            </div>
+        </div>
+
+        <!-------------------------------------- Listes des tâches --------------------------------------->
+        <div class="container">
+
+            <div class="centrerhaut">        
+                <h1>Votre liste</h1>
+                <input type="text" id="taskInput" placeholder="Nouvelle tâche...">
+                <button id="addTask">Ajouter</button>
+            </div>
+
+            <ul id="taskList"></ul>
+            <button id="clearAll">Effacer<br>la memoire</button>
+
+        </div>
+
+        <script src="./JavaScript/script.js"></script>
+    </body>
+
+</html>
+
